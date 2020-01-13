@@ -1,0 +1,886 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundcolor"
+    android:orientation="vertical"
+    tools:context="com.saavor.user.activity.Filter">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/tool_clear_filter"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".2"
+            android:src="@drawable/ic_clear_black" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight=".6"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:text="Filters"
+            android:textColor="@color/toolbargrey"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".2">
+
+
+            <ImageView
+                android:id="@+id/img_reset"
+                android:layout_width="44dp"
+                android:layout_height="match_parent"
+                android:gravity="end"
+                android:padding="8dp"
+                android:src="@drawable/reseticon" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/buttonback" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight=".9">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="bottom"
+                    android:text="Cuisine"
+                    android:textColor="@color/titlecolor"
+                    android:textSize="17dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/buttonback" />
+
+
+                <LinearLayout
+                    android:id="@+id/cusine_dash"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_centerVertical="true"
+                            android:id="@+id/txt_cusine_type"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="20dp"
+                            android:gravity="center_vertical"
+                            android:ems="12"
+                            android:singleLine="true"
+                            android:text="Select Cuisine"
+                            android:textColor="@color/blacklight"
+                            android:textSize="16sp" />
+
+                        <LinearLayout
+                            android:layout_alignParentRight="true"
+                            android:layout_gravity="right"
+                            android:layout_marginRight="20dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/img_cusine_list"
+                                android:layout_width="12dp"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/forwardgrey" />
+
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/buttonback" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/backgroundcolor"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:gravity="bottom"
+                        android:text="Quick Filters"
+                        android:textColor="@color/titlecolor"
+                        android:textSize="17dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/buttonback" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/ll_filters_offer"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@color/white"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="20dp"
+                                android:gravity="center_vertical"
+                                android:text="Offer/Discounts"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="end|center">
+
+                                <ImageView
+                                    android:id="@+id/img_tick_offer"
+                                    android:layout_width="48dp"
+                                    android:layout_height="48dp"
+                                    android:layout_marginRight="10dp"
+                                    android:padding="10dp"
+                                    android:src="@drawable/checkgreen"
+                                    android:visibility="invisible" />
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginLeft="20dp"
+                            android:background="@color/buttonback" />
+
+
+                        <LinearLayout
+                            android:id="@+id/ll_filters_veg"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@color/white"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="20dp"
+                                android:gravity="center_vertical"
+                                android:text="Vegetarian only"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="end|center">
+
+                                <ImageView
+                                    android:id="@+id/img_tick_veg"
+                                    android:layout_width="48dp"
+                                    android:layout_height="48dp"
+                                    android:layout_marginRight="10dp"
+                                    android:padding="10dp"
+                                    android:src="@drawable/checkgreen"
+                                    android:visibility="gone" />
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginLeft="20dp"
+                            android:background="@color/buttonback" />
+
+                        <LinearLayout
+                            android:id="@+id/ll_filters_book"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@color/white"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="20dp"
+                                android:gravity="center_vertical"
+                                android:text="Bookmarked"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="end|center">
+
+                                <ImageView
+                                    android:id="@+id/img_tick_book"
+                                    android:layout_width="48dp"
+                                    android:layout_height="48dp"
+                                    android:layout_marginRight="10dp"
+                                    android:padding="10dp"
+                                    android:src="@drawable/checkgreen"
+                                    android:visibility="gone" />
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/buttonback" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/backgroundcolor"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/backgroundcolor"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="15dp"
+                            android:fontFamily="sans-serif-medium"
+                            android:gravity="bottom"
+                            android:text="Service Type"
+                            android:textColor="@color/titlecolor"
+                            android:textSize="17dp" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:orientation="vertical">
+
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/buttonback" />
+
+
+                            <LinearLayout
+
+                                android:id="@+id/ll_servicetype"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:background="@color/white"
+                                android:orientation="horizontal"
+                                android:weightSum="1">
+
+
+                                <TextView
+                                    android:id="@+id/txt_sst"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="20dp"
+                                    android:gravity="center_vertical"
+                                    android:text="Select Service"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp" />
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="end|center">
+
+                                    <ImageView
+                                        android:id="@+id/img_select_service"
+                                        android:layout_width="32dp"
+                                        android:layout_height="48dp"
+                                        android:layout_marginRight="10dp"
+                                        android:padding="10dp"
+                                        android:src="@drawable/forwardgrey" />
+
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/buttonback" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:gravity="bottom"
+                        android:text="Sort by"
+                        android:textColor="@color/titlecolor"
+                        android:textSize="17dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/buttonback" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="5dp"
+                            android:orientation="vertical">
+
+                            <RadioGroup
+                                android:id="@+id/rg_sortby"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <RadioButton
+                                    android:id="@+id/rb_rating"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:buttonTint="@color/darkgrey"
+                                    android:shadowColor="@color/darkgrey"
+                                    android:text="Rating"
+                                    android:textColorHighlight="@color/darkgrey"
+                                    android:textColorHint="@color/darkgrey"
+                                    android:textSize="16sp" />
+
+                                <RadioButton
+                                    android:id="@+id/rb_distance"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="50dp"
+                                    android:buttonTint="@color/darkgrey"
+                                    android:checked="true"
+                                    android:text="Distance"
+                                    android:textColorHighlight="@color/darkgrey"
+                                    android:textSize="16sp" />
+
+                            </RadioGroup>
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/buttonback" />
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/backgroundcolor"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView18"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="15dp"
+                            android:fontFamily="sans-serif-medium"
+                            android:gravity="bottom"
+                            android:text="Kitchen Type"
+                            android:textColor="@color/titlecolor"
+                            android:textSize="17dp" />
+
+
+                        <LinearLayout
+                            android:id="@+id/ll_kitchentype"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:orientation="vertical">
+
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/buttonback" />
+
+                            <LinearLayout
+
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:background="@color/white"
+                                android:orientation="horizontal"
+                                android:weightSum="1">
+
+
+                                <TextView
+                                    android:id="@+id/txt_skt"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="20dp"
+                                    android:gravity="center_vertical"
+                                    android:text="Select Kitchen"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp" />
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="end|center">
+
+                                    <ImageView
+                                        android:id="@+id/img_select_kitchen"
+                                        android:layout_width="32dp"
+                                        android:layout_height="48dp"
+                                        android:layout_marginRight="10dp"
+                                        android:padding="10dp"
+                                        android:src="@drawable/forwardgrey" />
+
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/buttonback" />
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/seekbarLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/backgroundcolor"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:gravity="bottom"
+                        android:text="Delivery Time"
+                        android:textColor="@color/titlecolor"
+                        android:textSize="17dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/buttonback" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@color/white"
+                        android:orientation="horizontal"
+                        android:weightSum="12">
+
+
+                        <TextView
+                            android:id="@+id/textMin1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="5dp"
+                            android:gravity="center"
+                            android:text="0 min"
+                            android:textColor="@color/black" />
+
+
+                        <me.bendik.simplerangeview.SimpleRangeView xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:id="@+id/fixed_rangeview"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="12"
+                            android:gravity="center"
+                            app:count="60"
+                            app:end="60"
+                            app:endFixed="60"
+                            app:fixedThumbLabelColor="@color/white"
+                            app:showActiveTicks="false"
+                            app:showFixedLine="true"
+                            app:showFixedTicks="false"
+                            app:start="0"
+                            app:startFixed="0" />
+
+
+                        <TextView
+                            android:id="@+id/textMax1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="20dp"
+                            android:gravity="center"
+                            android:text="60 min"
+                            android:textColor="@color/black" />
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/buttonback" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/backgroundcolor"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:gravity="bottom"
+                        android:text="Cost For One"
+                        android:textColor="@color/titlecolor"
+                        android:textSize="17dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/buttonback" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginRight="12dp"
+                            android:orientation="horizontal"
+                            android:weightSum="9">
+
+                            <Button
+                                android:id="@+id/but_200"
+                                android:layout_width="0dp"
+                                android:layout_height="30dp"
+                                android:layout_margin="10dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_weight="3"
+                                android:background="@drawable/filterback"
+                                android:text="$"
+                                android:textColor="@color/darkgrey" />
+
+                            <Button
+                                android:id="@+id/but_500"
+                                android:layout_width="0dp"
+                                android:layout_height="30dp"
+                                android:layout_margin="10dp"
+                                android:layout_weight="3"
+                                android:background="@drawable/filterback"
+                                android:text="$$"
+                                android:textColor="@color/darkgrey" />
+
+                            <Button
+                                android:id="@+id/but_1000"
+                                android:layout_width="0dp"
+                                android:layout_height="30dp"
+                                android:layout_margin="10dp"
+                                android:layout_weight="3"
+                                android:background="@drawable/filterback"
+                                android:text="$$$"
+                                android:textColor="@color/darkgrey" />
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/buttonback" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/backgroundcolor"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:gravity="bottom"
+                        android:text="Minimum Order"
+                        android:textColor="@color/titlecolor"
+                        android:textSize="17dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/buttonback" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginRight="12dp"
+                            android:orientation="horizontal"
+                            android:weightSum="10">
+
+
+                            <Button
+                                android:id="@+id/but_20"
+                                android:layout_width="0dp"
+                                android:layout_height="30dp"
+                                android:layout_margin="10dp"
+                                android:layout_weight="2.5"
+                                android:background="@drawable/filterback"
+                                android:text="&lt; $20"
+                                android:textColor="@color/darkgrey" />
+
+                            <Button
+                                android:id="@+id/but_50"
+                                android:layout_width="0dp"
+                                android:layout_height="30dp"
+                                android:layout_margin="10dp"
+                                android:layout_weight="2.5"
+                                android:background="@drawable/filterback"
+                                android:text="&lt; $50"
+                                android:textColor="@color/darkgrey" />
+
+                            <Button
+                                android:id="@+id/but_100"
+                                android:layout_width="0dp"
+                                android:layout_height="30dp"
+                                android:layout_margin="10dp"
+                                android:layout_weight="2.5"
+                                android:background="@drawable/filterback"
+                                android:text="&lt; $100"
+                                android:textColor="@color/darkgrey" />
+
+                            <Button
+                                android:id="@+id/but_150"
+                                android:layout_width="0dp"
+                                android:layout_height="30dp"
+                                android:layout_margin="10dp"
+                                android:layout_weight="2.5"
+                                android:background="@drawable/filterback"
+                                android:text="&lt; $150"
+                                android:textColor="@color/darkgrey" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/buttonback" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="Delivery Date"
+                        android:textColor="@color/titlecolor"
+                        android:textSize="17dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/buttonback" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+
+                        <TextView
+                            android:id="@+id/txt_selectdatefilter"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center_vertical"
+                            android:text="Select a Date"
+                            android:textColor="@color/black"
+                            android:textSize="16sp">
+
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/txt_selecttimefilter"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center_vertical"
+                            android:text="Select Time"
+                            android:textColor="@color/black"
+                            android:textSize="16sp">
+
+                        </TextView>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/buttonback" />
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </LinearLayout>
+
+</LinearLayout>

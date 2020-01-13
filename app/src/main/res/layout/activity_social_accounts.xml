@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/backgroundcolor"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.saavor.user.activity.SocialAccounts">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_refone"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        app:popupTheme="@style/AppTheme.PopupOverlay">
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="match_parent"
+            android:id="@+id/img_back_social"
+            android:src="@drawable/backicon"/>
+
+        <TextView
+            android:layout_weight=".9"
+            android:fontFamily="sans-serif-medium"
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginRight="35dp"
+            android:text="Social Accounts"
+            android:textColor="@color/toolbargrey"
+            android:textSize="18dp" />
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/buttonback"/>
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="27dp"
+        android:text="My Social Accounts"
+        android:textSize="17dp"
+        android:layout_marginBottom="5dp"
+        android:textColor="@color/titlecolor"
+        android:fontFamily="sans-serif-medium" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/buttonback"/>
+
+    <LinearLayout
+        android:id="@+id/ll_facebook"
+        android:background="@color/white"
+
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:padding="7dp"
+            android:src="@drawable/facebookicon_sa" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Facebook"
+            android:textSize="18dp"
+            android:textColor="@color/blacklight2"
+            android:layout_gravity="center_vertical"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="end">
+
+            <ImageView
+                android:id="@+id/img_check_facebook"
+                android:layout_width="50dp"
+                android:layout_marginRight="10dp"
+                android:visibility="gone"
+                android:padding="10dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/checkgreen"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="20dp"
+        android:background="@color/buttonback"/>
+
+    <LinearLayout
+        android:id="@+id/ll_googleplus"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:padding="7dp"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/googleicon_sa"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Google Plus"
+            android:textSize="18dp"
+            android:textColor="@color/blacklight2"
+            android:layout_gravity="center_vertical"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="end">
+
+            <ImageView
+                android:id="@+id/img_check_google"
+                android:layout_width="50dp"
+                android:visibility="gone"
+                android:layout_marginRight="10dp"
+                android:padding="10dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/checkgreen"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/buttonback"/>
+
+</LinearLayout>

@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/transparent"
+    android:gravity="center"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ll_dashtotal"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:background="@drawable/popcurve"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/dialog_clear"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="end"
+            android:src="@drawable/ic_clear_black"/>
+
+        <LinearLayout
+            android:id="@+id/ll_dailog_d_p"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/but_search_del"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/popredlayout"
+                android:text="Delivery"
+                android:textSize="12sp"
+                android:textAllCaps="false"
+                android:textColor="@color/white"/>
+
+            <Button
+                android:id="@+id/but_search_pick"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/poprightlayout"
+                android:text="Pickup"
+                android:textSize="12sp"
+                android:textAllCaps="false"
+                android:textColor="@color/accent"/>
+        </LinearLayout>
+
+        <Button
+     android:visibility="gone"
+            android:id="@+id/alternate_view_pop"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@null"
+            android:fontFamily="sans-serif-medium"
+            android:stateListAnimator="@null"
+            android:text="Set Location"
+            android:layout_gravity="center"
+            android:textAllCaps="false"
+            android:textColor="@color/accent"
+            android:textSize="17sp" />
+
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+
+                <AutoCompleteTextView
+                    android:id="@+id/edt_location_popup"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.8"
+                    android:layout_height="match_parent"
+                    android:ems="10"
+                    android:textSize="15dp"
+                    android:hint="Your Location"
+                    android:textColor="@color/blacklight"
+                    android:inputType="textPersonName"
+                    android:maxLength="70"
+                    android:background="@null"
+                    android:maxLines="1" />
+
+                <ImageView
+                    android:id="@+id/img_text_clear"
+                    android:padding="2dp"
+                    android:layout_width="0dp"
+                    android:layout_weight=".1"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/clear_text"/>
+
+
+                <ImageView
+                    android:id="@+id/img_gps_loc"
+                    android:layout_weight=".1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/ic_gpsiconn" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="20dp"
+                android:background="@color/blacklight"/>
+
+            <TextView
+                android:id="@+id/txt_loading_add"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Loading Address...."/>
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/txt_addlist_dialg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="Or select from address book"
+                android:textColor="@color/accent" />
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/rec_addlist"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <!--<LinearLayout-->
+                <!--android:layout_marginTop="15dp"-->
+                <!--android:id="@+id/ll_dialog_add"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="horizontal">-->
+
+                <!--<TextView-->
+                    <!--android:textColor="@color/accent"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginLeft="20dp"-->
+                    <!--android:textSize="17sp"-->
+                    <!--android:text="or select from Address book" />-->
+
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:gravity="end">-->
+
+                    <!--<ImageView-->
+                        <!--android:id="@+id/pick_add"-->
+                        <!--android:layout_marginRight="20dp"-->
+                        <!--android:layout_gravity="end"-->
+                        <!--android:layout_width="20dp"-->
+                        <!--android:layout_height="20dp"-->
+                        <!--android:src="@drawable/rightarrow"/>-->
+
+                <!--</LinearLayout>-->
+
+            <!--</LinearLayout>-->
+
+
+            <!--<Button-->
+                <!--android:layout_marginTop="15dp"-->
+                <!--android:id="@+id/but_search_popup"-->
+                <!--android:layout_width="70dp"-->
+                <!--android:layout_height="30dp"-->
+                <!--android:layout_gravity="center_horizontal"-->
+                <!--android:layout_marginBottom="15dp"-->
+                <!--android:background="@drawable/filterpressed"-->
+                <!--android:text="Search"-->
+                <!--android:textColor="@color/white"-->
+                <!--android:textSize="12sp" />-->
+
+
+            <!--<LinearLayout-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:layout_marginBottom="20dp"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="30dp"-->
+                <!--android:layout_marginLeft="20dp"-->
+                <!--android:layout_marginRight="10dp"-->
+                <!--android:background="@color/white"-->
+                <!--android:orientation="horizontal">-->
+
+                <!--<Button-->
+                    <!--android:id="@+id/but_home_popup"-->
+                    <!--android:layout_width="70dp"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:background="@drawable/filterback"-->
+                    <!--android:text="Home"-->
+                    <!--android:textColor="@color/darkgrey"-->
+                    <!--android:textSize="12sp" />-->
+
+                <!--<Button-->
+                    <!--android:id="@+id/but_work_popup"-->
+                    <!--android:layout_width="70dp"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:layout_marginLeft="10dp"-->
+                    <!--android:background="@drawable/filterback"-->
+                    <!--android:text="Work"-->
+                    <!--android:textSize="12sp"-->
+                    <!--android:textColor="@color/darkgrey" />-->
+
+            <!--</LinearLayout>-->
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

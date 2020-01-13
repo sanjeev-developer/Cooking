@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#F1393C</color>
+    <color name="colorPrimaryDark">#F1393C</color>
+    <color name="colorAccent">#F1393C</color>
+    <color name="darkgrey">#595959</color>
+    <color name="black">#b9000000</color>
+    <color name="toolbargrey">#e42428</color>
+    <color name="tooltitle">#F1393C</color>
+    <color name="buttonback">#cacaca</color>
+    <color name="shadow">#81cacaca</color>
+    <color name="lightnavgrey">#e6e5e5</color>
+    <color name="lightgrey">#8b8a8a</color>
+    <color name="titlecolor">#848484</color>
+    <color name="yellow">#F1AE2E</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="blacklight">#b9000000</color>
+    <color name="blacklight2">#d8000000</color>
+    <color name="white">#ffffff</color>
+    <color name="whiteless">#34ffffff</color>
+    <color name="whitetrans">#2dffffff</color>
+    <color name="lightt">#a8000000</color>
+    <color name="nextbutcolor">#559A9E</color>
+    <color name="txtcolor">#838383</color>
+    <color name="backgroundcolor">#EFEFF4</color>
+    <color name="green">#4f9f35</color>
+    <color name="transblack">#87080808</color>
+    <color name="darkyellow">#f1bd2d</color>
+    <color name="transparent">#00f1bd2d</color>
+    <color name="greenhighlight">#00af00</color>
+    <color name="blacktrans">#4f030303</color>
+    <color name="notificationgrey">#F7F7F7</color>
+    <color name="littelgrey">#ECECEC</color>
+    <color name="colorGray">#d7d7d7</color>
+
+    <color name="colorSeparator">#CCC</color>
+
+    <color name="colorText">#646464</color>
+
+    <color name="colorWhite">#FFF</color>
+
+</resources>

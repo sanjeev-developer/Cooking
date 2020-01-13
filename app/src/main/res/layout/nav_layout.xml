@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_nav_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/img_user_nav"
+            android:layout_width="40dp"
+            android:padding="2dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/usericonpd"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#FFFF"/>
+
+        <TextView
+            android:id="@+id/txt_nav_username"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="John's Kitchen"
+            android:singleLine="true"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginRight="40dp"
+            android:textColor="@color/toolbargrey"
+            android:textSize="16sp" />
+
+
+    </LinearLayout>
+
+
+
+    <ScrollView
+        android:background="@color/white"
+        android:layout_weight=".9"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <LinearLayout
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/backgroundcolor"/>
+
+            <TextView
+                android:id="@+id/txt_nav_home"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:gravity="center"
+                android:text="Home"
+                android:textColor="@color/blacklight2"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/lightnavgrey"/>
+
+            <TextView
+                android:id="@+id/txt_nav_bookmark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:gravity="center"
+                android:text="Bookmarks"
+                android:textColor="@color/blacklight2"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/lightnavgrey"/>
+
+            <TextView
+                android:id="@+id/txt_nav_dishes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:gravity="center"
+                android:text="Favorite Dishes"
+                android:textColor="@color/blacklight2"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/lightnavgrey"/>
+
+            <TextView
+                android:id="@+id/txt_nav_order"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:gravity="center"
+                android:text="Order History"
+                android:textColor="@color/blacklight2"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/lightnavgrey"/>
+
+            <TextView
+                android:id="@+id/txt_nav_BookingHistory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:gravity="center"
+                android:text="Booking History"
+                android:textColor="@color/blacklight2"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/lightnavgrey"/>
+
+            <TextView
+                android:id="@+id/txt_nav_refferal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:gravity="center"
+                android:text="Referral"
+                android:textColor="@color/blacklight2"
+                android:textSize="16sp" />
+
+
+            <!--<View-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="1dp"-->
+                <!--android:background="@color/lightnavgrey"/>-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/txt_nav_meal"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:gravity="center"-->
+                <!--android:text="Promotions"-->
+                <!--android:paddingTop="10dp"-->
+                <!--android:paddingBottom="10dp"-->
+                <!--android:textColor="@color/blacklight2"-->
+                <!--android:textSize="18dp" />-->
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/lightnavgrey"/>
+
+
+            <TextView
+                android:id="@+id/txt_nav_badges"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:gravity="center"
+                android:text="Badges"
+                android:textColor="@color/blacklight2"
+                android:textSize="16sp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/lightnavgrey"/>
+
+            <TextView
+                android:id="@+id/txt_nav_acc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:gravity="center"
+                android:text="Account"
+                android:textColor="@color/blacklight2"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/lightnavgrey"/>
+
+            <LinearLayout
+                android:id="@+id/ll_not_draw"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+
+                <TextView
+                    android:layout_weight="6.5"
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/txt_nav_notifi"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="15dp"
+                    android:gravity="end"
+                    android:layout_marginLeft="40dp"
+                    android:text="Notifications"
+                    android:textColor="@color/blacklight2"
+                    android:textSize="16sp" />
+
+                <RelativeLayout
+                    android:layout_weight="3.5"
+                    android:layout_width="20dp"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_height="match_parent">
+
+
+                        <FrameLayout
+                            android:id="@+id/frame_notification"
+                            android:visibility="invisible"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/rezound"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp">
+
+                            <TextView
+                                android:id="@+id/txt_notcount"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="0"
+                                android:gravity="center"
+                                android:maxLength="2"
+                                android:textStyle="bold"
+                                android:textColor="@color/white" />
+                        </FrameLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/lightnavgrey"/>
+
+            <TextView
+                android:id="@+id/txt_nav_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:gravity="center"
+                android:text="Address Book"
+                android:textColor="@color/blacklight2"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/lightnavgrey"/>
+
+            <TextView
+                android:id="@+id/txt_nav_payment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:gravity="center"
+                android:text="Payment"
+                android:textColor="@color/blacklight2"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/lightnavgrey"/>
+
+            <TextView
+                android:id="@+id/txt_nav_faq"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:gravity="center"
+                android:text="FAQ"
+                android:textColor="@color/blacklight2"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/lightnavgrey"/>
+
+            <TextView
+                android:id="@+id/txt_nav_feed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:gravity="center"
+                android:text="Feedback"
+                android:textColor="@color/blacklight2"
+                android:textSize="16sp" />
+
+            <View
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/lightnavgrey"/>
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/txt_nav_rate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:gravity="center"
+                android:text="Rate us on Play Store"
+                android:textColor="@color/blacklight2"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/lightnavgrey"/>
+
+            <TextView
+                android:id="@+id/txt_nav_about"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:gravity="center"
+                android:text="About"
+                android:textColor="@color/blacklight2"
+                android:textSize="16sp" />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_weight=".1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="bottom"
+        android:background="@color/backgroundcolor"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/lightnavgrey"/>
+
+            <TextView
+                android:id="@+id/txt_nav_logout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Logout"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@color/darkgrey"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+</LinearLayout>

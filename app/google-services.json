@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "210814977907",
+    "firebase_url": "https://usercloudmessaging-4b1d8.firebaseio.com",
+    "project_id": "usercloudmessaging-4b1d8",
+    "storage_bucket": "usercloudmessaging-4b1d8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:210814977907:android:758fb61e1889c2e6",
+        "android_client_info": {
+          "package_name": "com.saavor.user"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "210814977907-qjus6c8tntc4k0n1a675fkt5b4ajqbv2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDn31UXzIA3wU5q-bGJDlVMHTGco-2ngMo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:210814977907:android:bcbd7933b8cb0551",
+        "android_client_info": {
+          "package_name": "com.saavor.user"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "210814977907-qjus6c8tntc4k0n1a675fkt5b4ajqbv2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDn31UXzIA3wU5q-bGJDlVMHTGco-2ngMo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

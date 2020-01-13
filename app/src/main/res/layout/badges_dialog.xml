@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/black"
+    android:gravity="center"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:padding="20dp"
+        android:id="@+id/ll_dashtotal"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:background="@drawable/popcurve"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/badge_diag_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Big Foodie"
+            android:textColor="@color/blacklight"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+      <ImageView
+          android:id="@+id/badge_diag_img"
+          android:layout_weight=".4"
+          android:layout_marginTop="5dp"
+          android:layout_width="0dp"
+          android:layout_height="150dp"
+          android:scaleType="fitCenter"
+          android:layout_gravity="center_vertical"
+          android:src="@drawable/explorer_enabled"/>
+
+            <LinearLayout
+                android:layout_weight=".7"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/badge_subtitle_diag"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="EXPLORER"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="@color/accent" />
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/badge_desc"
+                    android:layout_marginRight="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Description lorem ipsu um dolor sit aqa, turad adipiscing elit, sed do eiusmod teqmp"
+                    android:textSize="15dp" />
+
+
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10">
+            <TextView
+                android:layout_weight="2.5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="PROGRESS"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                android:textColor="@color/nextbutcolor" />
+
+            <TextView
+                android:id="@+id/badge_earn_total"
+                android:layout_weight="1.5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="10/100"
+                android:textColor="@color/blacklight"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+
+
+            <ProgressBar
+                android:id="@+id/badge_progress"
+                android:layout_weight="6"
+                android:layout_width="0dp"
+                android:layout_height="15dp"
+                android:layout_gravity="center|center_horizontal"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:progressDrawable="@drawable/progress_badge"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:progress="40" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

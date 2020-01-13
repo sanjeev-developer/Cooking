@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_parentView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/profilePicRl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/img_chefDp"
+                    android:layout_width="@dimen/dp_75"
+                    android:layout_height="@dimen/dp_75"
+                    android:layout_margin="@dimen/margin_10dp"
+                    android:src="@drawable/usericonpd" />
+
+                <ProgressBar
+                    android:id="@+id/imageLoader"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerInParent="true"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_kitchen_move"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".7"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/txt_chef_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Granny's Kitchen"
+                                android:textColor="@color/blacklight"
+                                android:textStyle="bold" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <!--<TextView-->
+                                    <!--android:layout_width="wrap_content"-->
+                                    <!--android:layout_height="wrap_content"-->
+                                    <!--android:singleLine="true"-->
+                                    <!--android:text="Company: "-->
+                                    <!--android:textSize="12sp"-->
+                                    <!--android:fontFamily="sans-serif-medium"-->
+                                    <!--android:textColor="@color/accent" />-->
+
+
+
+                                <TextView
+                                    android:id="@+id/txt_company_name"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:singleLine="true"
+                                    android:text="FoodieJunction"
+                                    android:textSize="12sp"
+                                    android:textColor="@color/darkgrey" />
+
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/txt_region"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="sans-serif-medium"
+                                android:singleLine="true"
+                                android:textSize="12sp"
+                                android:text="North Indian, Chinese"
+                                android:textColor="@color/nextbutcolor" />
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".3"
+                        android:gravity="end">
+
+                        <Button
+                            android:id="@+id/but_deal"
+                            android:layout_width="55dp"
+                            android:layout_height="25dp"
+                            android:layout_marginRight="20dp"
+                            android:background="@drawable/dashbuttonlayout"
+                            android:stateListAnimator="@null"
+                            android:text="Deals"
+                            android:textColor="@color/white"
+                            android:textSize="12sp"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <!--<TextView-->
+                <!--android:fontFamily="sans-serif-medium"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Indian, Arabic"-->
+                <!--android:textColor="@color/nextbutcolor" />-->
+
+                <LinearLayout
+                    android:id="@+id/deliveryTimell"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:singleLine="true"-->
+                        <!--android:text="Price: "-->
+                        <!--android:textSize="12sp"-->
+                        <!--android:fontFamily="sans-serif-medium"-->
+                        <!--android:textColor="@color/accent" />-->
+
+                    <TextView
+                        android:id="@+id/txt_hourly_rate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$20/hr"
+                        android:textSize="12sp"
+                        android:textColor="@color/lightgrey" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:singleLine="true"-->
+                        <!--android:text="Service Radius: "-->
+                        <!--android:textSize="12sp"-->
+                        <!--android:fontFamily="sans-serif-medium"-->
+                        <!--android:textColor="@color/accent" />-->
+
+                    <TextView
+                        android:id="@+id/txt_distance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="within 2 miles "
+                        android:textSize="12sp"
+                        android:textColor="@color/lightgrey" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/reccurvedash"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt_donly"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:text="Verified Bookings  "
+                android:textColor="@color/lightgrey"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:id="@+id/deliveryFeell"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp" />
+
+                <TextView
+                    android:id="@+id/txt_Bookings"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="12"
+                    android:textColor="@color/darkgrey"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/hearty"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="5dp"
+                android:gravity="end|center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/img_heart1_d"
+                    android:layout_width="15dp"
+                    android:layout_height="14dp"
+                    android:layout_marginRight="2dp"
+                    android:src="@drawable/greyheart" />
+
+                <ImageView
+                    android:id="@+id/img_heart2_d"
+                    android:layout_width="15dp"
+                    android:layout_height="14dp"
+                    android:layout_marginRight="2dp"
+                    android:src="@drawable/greyheart" />
+
+                <ImageView
+                    android:id="@+id/img_heart3_d"
+                    android:layout_width="15dp"
+                    android:layout_height="14dp"
+                    android:layout_marginRight="2dp"
+                    android:src="@drawable/greyheart" />
+
+                <ImageView
+                    android:id="@+id/img_heart4_d"
+                    android:layout_width="15dp"
+                    android:layout_height="14dp"
+                    android:layout_marginRight="2dp"
+                    android:src="@drawable/greyheart" />
+
+                <ImageView
+                    android:id="@+id/img_heart5_d"
+                    android:layout_width="15dp"
+                    android:layout_height="14dp"
+                    android:layout_marginRight="2dp"
+                    android:src="@drawable/greyheart" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/buttonback" />
+
+
+</LinearLayout>

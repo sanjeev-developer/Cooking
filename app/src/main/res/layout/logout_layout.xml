@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/transparent"
+    android:gravity="center"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ll_dashtotal"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:background="@drawable/popcurve"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <!--<LinearLayout-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:layout_weight=".4"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:gravity="left">-->
+
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/chooser_clear"-->
+                    <!--android:layout_width="40dp"-->
+                    <!--android:layout_height="40dp"-->
+                    <!--android:layout_gravity="end"-->
+                    <!--android:layout_marginLeft="15dp"-->
+                    <!--android:src="@drawable/logout_icon"/>-->
+
+            <!--</LinearLayout>-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:layout_weight=".6"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:gravity="left">-->
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:fontFamily="sans-serif-medium"
+                    android:layout_gravity="center"
+                    android:text="Logout"
+                    android:textColor="@color/accent"
+                    android:textSize="19sp" />
+
+          <!--//  </LinearLayout>-->
+
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:fontFamily="sans-serif"
+            android:layout_gravity="center"
+            android:text="Are you sure you want to Logout?"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/darkgrey"
+            android:textSize="17sp" />
+
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+
+                <Button
+                    android:id="@+id/logout_diag"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="0dp"
+                    android:layout_weight=".5"
+                    android:layout_height="40dp"
+                    android:background="@drawable/log_but_out"
+                    android:stateListAnimator="@null"
+                    android:text="Log Out"
+                    android:textAllCaps="false"
+                    android:fontFamily="sans-serif"
+                    android:textColor="@color/lightgrey"
+                    android:textSize="14dp" />
+
+
+                <Button
+                    android:id="@+id/stay_diag"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="0dp"
+                    android:layout_weight=".5"
+                    android:layout_height="40dp"
+                    android:background="@drawable/logged_out_button_back"
+                    android:stateListAnimator="@null"
+                    android:text="Stay Logged In"
+                    android:textAllCaps="false"
+                    android:fontFamily="sans-serif"
+                    android:textColor="@color/white"
+                    android:textSize="14dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

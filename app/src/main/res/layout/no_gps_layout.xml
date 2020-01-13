@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/transparent"
+    android:gravity="center"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ll_dashtotal"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:background="@drawable/not_curve"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:weightSum="10">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:fontFamily="sans-serif-medium"
+                    android:layout_gravity="center"
+                    android:text="Alert"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/accent"
+                    android:textSize="17sp" />
+
+
+        </LinearLayout>
+
+
+
+        <ImageView
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:src="@drawable/no_gps"/>
+
+        <TextView
+            android:id="@+id/text_empty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:text="Please enabled your Gps network to continue!"
+            android:textColor="@color/blacklight"
+            android:textSize="15sp" />
+
+
+            <Button
+                android:id="@+id/gps_settings"
+                android:layout_margin="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/logged_out_button_back"
+                android:stateListAnimator="@null"
+                android:text="Setting's"
+                android:textAllCaps="false"
+                android:fontFamily="sans-serif"
+                android:textColor="@color/white"
+                android:textSize="14dp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+

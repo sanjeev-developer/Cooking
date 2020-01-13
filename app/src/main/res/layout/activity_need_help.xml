@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/backgroundcolor"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.saavor.user.activity.NeedHelp">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_Business_detail"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        android:weightSum="1">
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tool_need_back"
+            android:src="@drawable/backicon" />
+
+        <TextView
+            android:fontFamily="sans-serif-medium"
+            android:id="@+id/textVie"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Need Help ?"
+            android:layout_marginRight="50dp"
+            android:textColor="@color/toolbargrey"
+            android:textSize="17dp" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/buttonback"/>
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select topic"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="@color/titlecolor"
+        android:textSize="16sp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/buttonback"/>
+
+    <LinearLayout
+        android:id="@+id/img_incomplete_order"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="65dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Incomplete Order"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@color/blacklight"
+                android:textSize="16dp"/>
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Let us know if your order is missing items." />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="end"
+            android:layout_marginRight="20dp">
+
+            <ImageView
+                android:layout_width="13dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/forwardgrey"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/buttonback"/>
+
+    <LinearLayout
+        android:id="@+id/img_order_status"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="65dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Order Status"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@color/blacklight"
+                android:textSize="16dp"/>
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Find out where your order is." />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="end"
+            android:layout_marginRight="20dp">
+
+            <ImageView
+                android:layout_width="13dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/forwardgrey"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/buttonback"/>
+
+    <LinearLayout
+        android:id="@+id/img_billing_error"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="65dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Billing Error"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@color/blacklight"
+                android:textSize="16dp"/>
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Report a discrepancy between bill amount." />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="end"
+            android:layout_marginRight="20dp">
+
+            <ImageView
+
+                android:layout_width="13dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/forwardgrey"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/buttonback"/>
+
+    <LinearLayout
+        android:id="@+id/img_refund_status"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="65dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Refund Status"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@color/blacklight"
+                android:textSize="16dp"/>
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Check the status of a refund." />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="end"
+            android:layout_marginRight="20dp">
+
+            <ImageView
+
+                android:layout_width="13dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/forwardgrey"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/buttonback"/>
+
+    <LinearLayout
+        android:id="@+id/img_general_queries"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="65dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="General Queries"
+                android:textColor="@color/blacklight"
+                android:textSize="16dp"
+                android:fontFamily="sans-serif-medium" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="2dp"
+                android:text="Ask about anything else." />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="end"
+            android:layout_marginRight="20dp">
+
+            <ImageView
+
+                android:layout_width="13dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/forwardgrey"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/buttonback"/>
+
+</LinearLayout>

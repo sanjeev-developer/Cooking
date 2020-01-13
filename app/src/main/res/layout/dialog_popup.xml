@@ -1,0 +1,94 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@drawable/not_curve"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Custom Tip"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="@color/accent" />
+
+
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:src="@drawable/tip_icon"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter the tip of your choice."
+        android:textSize="17dp"
+        android:gravity="center"
+        android:fontFamily="sans-serif-medium"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/blacklight" />
+
+
+    <EditText
+        android:minWidth="300dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/txt_tip_per"
+        android:padding="5dp"
+        android:background="@drawable/customback"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:inputType="phone"
+        android:layout_width="match_parent"
+        android:maxLength="2"
+        android:digits="1234567890"
+        android:layout_height="wrap_content"
+        android:hint="25%" />
+
+    <LinearLayout
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+
+        <Button
+            android:id="@+id/cancel_dialog"
+            android:layout_marginRight="10dp"
+            android:layout_width="0dp"
+            android:layout_weight=".5"
+            android:layout_height="40dp"
+            android:background="@drawable/log_but_out"
+            android:stateListAnimator="@null"
+            android:text="Cancel"
+            android:textAllCaps="false"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/lightgrey"
+            android:textSize="14dp" />
+
+
+        <Button
+            android:id="@+id/save_dialog"
+            android:layout_marginLeft="10dp"
+            android:layout_width="0dp"
+            android:layout_weight=".5"
+            android:layout_height="40dp"
+            android:background="@drawable/logged_out_button_back"
+            android:stateListAnimator="@null"
+            android:text="Save"
+            android:textAllCaps="false"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/white"
+            android:textSize="14dp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
